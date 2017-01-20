@@ -1,0 +1,28 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>FGJ Sponsor Roll</title>
+  <script type="text/javascript">
+    var index=0;
+    function changeBanner(){ 
+      [].forEach.call(document.images,function (v,i) { document.images[i].hidden = i!==index});
+      index = (index+1) % document.images.length;
+    }
+    window.onload = function () {setInterval(changeBanner, 8000)};
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+    <div>
+      <img src="sponsors/traplight.png" width="288px"/>
+      <img src="sponsors/fingersoft_logo_white.png" width="288px"/>
+      <img src="sponsors/Futureplay-Logo-White.png" width="288px"/>
+      <img src="sponsors/GrandCru_logo_White.png" width="288px"/>
+      <img src="sponsors/ROVIO_LOGO_VERTICAL_white_RGB.png" width="288px"/>
+      <img src="sponsors/supercell_logo_white_on_transp.png" width="288px"/>
+      <img src="sponsors/new-microsoft-logo.png" width="288px">
+    </div>
+  </div>
+</body>
+</html>
